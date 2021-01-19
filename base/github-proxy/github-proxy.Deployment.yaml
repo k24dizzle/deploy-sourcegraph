@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - env:
-        image: index.docker.io/sourcegraph/github-proxy:insiders@sha256:82d6099a3030e1d4cbc51aedbd4c2350691f8ff1bc757d3cd1baec06bbab3018
+        image: index.docker.io/sourcegraph/github-proxy:insiders@sha256:45017dcf2687ce72f91a37759ff4bb6e6abf97134e7d0841d8441f99845b80fc
         terminationMessagePolicy: FallbackToLogsOnError
         name: github-proxy
         ports:
@@ -41,7 +41,7 @@ spec:
           requests:
             cpu: 100m
             memory: 250M
-      - image: index.docker.io/sourcegraph/jaeger-agent:insiders@sha256:744a76eb493a4ddb485a264f8c864cfb4cdb379d88907857de14a854b41a7f51
+      - image: index.docker.io/sourcegraph/jaeger-agent:insiders@sha256:496eeabe53b176a561b4eab34c81a299a552b8ccd3819a86e4b78012c64fa84f
         name: jaeger-agent
         env:
           - name: POD_NAME
